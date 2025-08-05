@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santé Connectée Tchad - Diagnostic IA des Maladies Tropicales</title>
+    <meta name="description" content="Plateforme de diagnostic précoce des maladies tropicales utilisant l'intelligence artificielle">
+    <meta name="keywords" content="diagnostic médical, IA, maladies tropicales, paludisme, typhoïde, santé, Tchad">
+    <meta property="og:title" content="Santé Connectée Tchad">
+    <meta property="og:description" content="Diagnostic précoce des maladies tropicales par IA">
+    <meta name="twitter:title" content="Santé Connectée Tchad">
+    <meta name="twitter:description" content="Diagnostic précoce des maladies tropicales par IA">
+
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react@18/umd/react.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://resource.trickle.so/vendor_lib/unpkg/lucide-static@0.516.0/font/lucide.css" rel="stylesheet">
+
+    <style type="text/tailwindcss">
+    @layer components {
+        .btn-primary {
+            @apply bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg transition duration-200;
+        }
+        .btn-secondary {
+            @apply bg-gray-200 hover:bg-gray-300 text-gray-800 font-semibold py-2 px-4 rounded-lg transition duration-200;
+        }
+        .card {
+            @apply bg-white rounded-lg shadow-md p-6 border border-gray-200;
+        }
+        .input-field {
+            @apply w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+    
+    <script type="text/babel" src="utils/auth.js"></script>
+    <script type="text/babel" src="utils/diagnostic.js"></script>
+    <script type="text/babel" src="components/Header.js"></script>
+    <script type="text/babel" src="components/LoginForm.js"></script>
+    <script type="text/babel" src="components/RegisterForm.js"></script>
+    <script type="text/babel" src="components/DiagnosticForm.js"></script>
+    <script type="text/babel" src="components/Dashboard.js"></script>
+    <script type="text/babel" src="components/RendezVous.js"></script>
+    <script type="text/babel" src="components/Chat.js"></script>
+    <script type="text/babel" src="components/Messaging.js"></script>
+    <script type="text/babel" src="components/VideoCall.js"></script>
+    <script type="text/babel" src="components/MedecinDashboard.js"></script>
+    <script type="text/babel" src="components/Telemedicine.js"></script>
+    <script type="text/babel" src="components/ConsultationHistory.js"></script>
+    <script type="text/babel" src="components/Notifications.js"></script>
+    <script type="text/babel" src="components/Facturation.js"></script>
+    <script type="text/babel" src="components/MedecinMap.js"></script>
+    <script type="text/babel" src="utils/messaging.js"></script>
+    <script type="text/babel" src="utils/consultation.js"></script>
+    <script type="text/babel" src="utils/notifications.js"></script>
+    <script type="text/babel" src="utils/facturation.js"></script>
+    <script type="text/babel" src="utils/geolocation.js"></script>
+    <script type="text/babel" src="app.js"></script>
+</body>
+</html>
